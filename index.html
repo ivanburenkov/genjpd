@@ -44,7 +44,8 @@
   </head>
   <body>
     
-<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+<!--<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">-->
+  <header class="navbar navbar-expand-md navbar-dark fixed-top bg-dark shadow" style="padding-top:0; padding-bottom:0;">
   <a class="navbar-brand col-md-4 col-lg-2 me-0 px-3" href="#">
     <img src="bootstrapjs/favicon.ico" width="15%" height="15%" style="margin-right:5%; margin-left:-5%; margin-top:-12%;margin-bottom:-10%;">
     JPD generator</a>
@@ -52,6 +53,20 @@
   data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>    
   </button>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="https://ivanburenkov.github.io/"> <span class="fa-home" data-feather="home"></span></a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <span class="fa-menu" data-feather="menu">
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item active" href="https://ivanburenkov.github.io/genrpd">PND generator</a></li>
+        <li><a class="dropdown-item" href="https://ivanburenkov.github.io/genjpd">JPD generator</a></li>
+      </ul>
+    </li>
+  </ul>
 
   <div class="collapse multi-collapse" id="help">
     <div class="card card-body">
