@@ -166,8 +166,20 @@ function runCcode() {
     j = i - (cthn + cpoin + cspn + sthn + sspn + spoin + ithn + ispn);
     xinit.data[i] = document.getElementById("ipoi" + j).value;
   }
-  xinit.data[p - 2] = document.getElementById("iLoss").value;
-  xinit.data[p - 1] = document.getElementById("sLoss").value;
+  let testValue = document.getElementById("iLoss").value;
+  if((testValue>=0)&&(testValue<=1)){
+    xinit.data[p - 2] = testValue;
+  } else {
+    xinit.data[p - 2] = 1;
+  }
+  testValue = document.getElementById("sLoss").value;
+  if((testValue>=0)&&(testValue<=1)){
+    xinit.data[p - 1] = testValue;
+  } else {
+    xinit.data[p - 1] = 1;
+  }
+  //xinit.data[p - 2] = document.getElementById("iLoss").value;
+  //xinit.data[p - 1] = document.getElementById("sLoss").value;
 
   let nn = 21;
   z = cArray(nn * nn);
