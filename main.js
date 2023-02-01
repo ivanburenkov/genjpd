@@ -286,14 +286,14 @@ function runCcode() {
       domain: [0, 0.84],
       showgrid: false,
       showline: true,
-      title: "Signal number of photons",
+      title: "Idler number of photons",
       zeroline: false
     },
     yaxis: {
       domain: [0, 0.84],
       showgrid: false,
       showline: true,
-      title: "Idler number of photons",
+      title: "Signal number of photons",
       zeroline: false
     },
     xaxis2: {
